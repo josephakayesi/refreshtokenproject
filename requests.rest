@@ -1,0 +1,28 @@
+GET http://localhost:5000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibnBvdWxzZW40IiwiaWF0IjoxNTc4NzUzNjc3LCJleHAiOjE1Nzg3NTM3Mzd9.6R3SlilE7LLXX7Op6LKcBhiL22d3txFiVmf0ToHGvVs
+
+###
+
+POST http://localhost:5001/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibnBvdWxzZW40IiwiaWF0IjoxNTc4NzUzNTYwfQ.A7MGDXnBZ3IIu5CN7EGGaM56qiVs9WqocKvBzyy4xAA"
+}
+
+###
+
+DELETE  http://localhost:5001/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibnBvdWxzZW40IiwiaWF0IjoxNTc4NzUzNTM4fQ.vLfN7kFWPUu8-f2UjPvXxpiOJu0cstl49uop8v4iLms"
+}
+###
+
+POST http://localhost:5001/login
+Content-Type: application/json
+
+{
+    "username": "npoulsen4"
+}
